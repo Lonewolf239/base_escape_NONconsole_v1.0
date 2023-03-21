@@ -42,11 +42,12 @@ namespace baseescapev40 {
 
 	protected:
 
-	private: System::Windows::Forms::ProgressBar^ cp_progressbar;
+
 	private: System::Windows::Forms::Panel^ panel1;
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::Button^ Start;
+
 	private: 	int sec = 0;
+	private: System::Windows::Forms::Button^ Start;
 
 	private: System::ComponentModel::IContainer^ components;
 
@@ -67,7 +68,6 @@ namespace baseescapev40 {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(CP_loading3::typeid));
 			this->cp3_tm1 = (gcnew System::Windows::Forms::Timer(this->components));
 			this->cp3_tm2 = (gcnew System::Windows::Forms::Timer(this->components));
-			this->cp_progressbar = (gcnew System::Windows::Forms::ProgressBar());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->Start = (gcnew System::Windows::Forms::Button());
@@ -83,27 +83,21 @@ namespace baseescapev40 {
 			// 
 			this->cp3_tm2->Tick += gcnew System::EventHandler(this, &CP_loading3::cp_tm2_Tick);
 			// 
-			// cp_progressbar
-			// 
-			this->cp_progressbar->Location = System::Drawing::Point(147, 193);
-			this->cp_progressbar->Name = L"cp_progressbar";
-			this->cp_progressbar->Size = System::Drawing::Size(100, 23);
-			this->cp_progressbar->TabIndex = 0;
-			// 
 			// panel1
 			// 
 			this->panel1->BackColor = System::Drawing::Color::Silver;
 			this->panel1->Controls->Add(this->label1);
-			this->panel1->Location = System::Drawing::Point(63, 32);
+			this->panel1->Location = System::Drawing::Point(65, 32);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(269, 145);
+			this->panel1->Size = System::Drawing::Size(270, 145);
 			this->panel1->TabIndex = 1;
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 26, System::Drawing::FontStyle::Bold));
-			this->label1->Location = System::Drawing::Point(40, 30);
+			this->label1->ForeColor = System::Drawing::Color::WhiteSmoke;
+			this->label1->Location = System::Drawing::Point(41, 30);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(188, 78);
 			this->label1->TabIndex = 0;
@@ -113,15 +107,16 @@ namespace baseescapev40 {
 			// 
 			this->Start->BackColor = System::Drawing::Color::LightGreen;
 			this->Start->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->Start->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->Start->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->Start->Location = System::Drawing::Point(147, 221);
+			this->Start->ForeColor = System::Drawing::Color::Black;
+			this->Start->Location = System::Drawing::Point(110, 180);
 			this->Start->Name = L"Start";
-			this->Start->Size = System::Drawing::Size(100, 27);
-			this->Start->TabIndex = 7;
+			this->Start->Size = System::Drawing::Size(180, 65);
+			this->Start->TabIndex = 8;
 			this->Start->Text = L"Start Game";
 			this->Start->UseVisualStyleBackColor = false;
-			this->Start->Click += gcnew System::EventHandler(this, &CP_loading3::Start_Click);
+			this->Start->Click += gcnew System::EventHandler(this, &CP_loading3::Start_Click_1);
 			// 
 			// CP_loading3
 			// 
@@ -131,7 +126,6 @@ namespace baseescapev40 {
 			this->ClientSize = System::Drawing::Size(400, 260);
 			this->Controls->Add(this->Start);
 			this->Controls->Add(this->panel1);
-			this->Controls->Add(this->cp_progressbar);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"CP_loading3";
@@ -143,21 +137,22 @@ namespace baseescapev40 {
 
 		}
 	private: System::Void cp_tm1_Tick(System::Object^ sender, System::EventArgs^ e) {
-		this->cp_progressbar->Increment(1);
-		if (this->cp_progressbar->Value == 100)
-			this->cp3_tm2->Start();
+
 	}
 	private: System::Void cp_tm2_Tick(System::Object^ sender, System::EventArgs^ e) {
 		sec++;
 		if (sec == 5) {
-			first_floor^ f8 = gcnew first_floor();
-			f8->Show();
-			CP_loading3::Hide();
+
 		}
 	}
 	private: System::Void Start_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->cp3_tm1->Start();
 		this->Start->Hide();
 	}
-	};
+	private: System::Void Start_Click_1(System::Object^ sender, System::EventArgs^ e) {
+			first_floor^ f8 = gcnew first_floor();
+			f8->Show();
+			CP_loading3::Hide();
+	}
+};
 }

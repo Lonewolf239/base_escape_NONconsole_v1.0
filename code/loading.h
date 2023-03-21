@@ -82,6 +82,7 @@ namespace baseescapev40 {
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Felix Titling", 22.25F, System::Drawing::FontStyle::Bold));
+			this->label1->ForeColor = System::Drawing::Color::Black;
 			this->label1->Location = System::Drawing::Point(12, 12);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(238, 175);
@@ -93,6 +94,7 @@ namespace baseescapev40 {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->label2->ForeColor = System::Drawing::Color::Black;
 			this->label2->Location = System::Drawing::Point(15, 197);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(11, 16);
@@ -107,9 +109,10 @@ namespace baseescapev40 {
 			// ext_btn
 			// 
 			this->ext_btn->BackColor = System::Drawing::Color::Red;
-			this->ext_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->ext_btn->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->ext_btn->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->ext_btn->ForeColor = System::Drawing::Color::Silver;
 			this->ext_btn->Location = System::Drawing::Point(367, 12);
 			this->ext_btn->Name = L"ext_btn";
 			this->ext_btn->Size = System::Drawing::Size(20, 20);

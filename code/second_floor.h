@@ -96,6 +96,7 @@ namespace baseescapev40 {
 			this->developer->AutoSize = true;
 			this->developer->Cursor = System::Windows::Forms::Cursors::Help;
 			this->developer->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold));
+			this->developer->ForeColor = System::Drawing::Color::Black;
 			this->developer->Location = System::Drawing::Point(12, 338);
 			this->developer->Name = L"developer";
 			this->developer->Size = System::Drawing::Size(141, 20);
@@ -108,6 +109,7 @@ namespace baseescapev40 {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 21.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->label1->ForeColor = System::Drawing::Color::Black;
 			this->label1->Location = System::Drawing::Point(237, 6);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(398, 33);
@@ -117,9 +119,10 @@ namespace baseescapev40 {
 			// ext_btn
 			// 
 			this->ext_btn->BackColor = System::Drawing::Color::Red;
-			this->ext_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->ext_btn->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->ext_btn->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->ext_btn->ForeColor = System::Drawing::Color::Silver;
 			this->ext_btn->Location = System::Drawing::Point(638, 12);
 			this->ext_btn->Name = L"ext_btn";
 			this->ext_btn->Size = System::Drawing::Size(30, 30);
@@ -155,6 +158,7 @@ namespace baseescapev40 {
 			this->Choice_bt1->BackColor = System::Drawing::Color::LightGreen;
 			this->Choice_bt1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->Choice_bt1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F, System::Drawing::FontStyle::Bold));
+			this->Choice_bt1->ForeColor = System::Drawing::Color::Black;
 			this->Choice_bt1->Location = System::Drawing::Point(16, 12);
 			this->Choice_bt1->Name = L"Choice_bt1";
 			this->Choice_bt1->Size = System::Drawing::Size(134, 59);
@@ -168,6 +172,7 @@ namespace baseescapev40 {
 			this->Choice_bt2->BackColor = System::Drawing::Color::LightGreen;
 			this->Choice_bt2->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->Choice_bt2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F, System::Drawing::FontStyle::Bold));
+			this->Choice_bt2->ForeColor = System::Drawing::Color::Black;
 			this->Choice_bt2->Location = System::Drawing::Point(16, 77);
 			this->Choice_bt2->Name = L"Choice_bt2";
 			this->Choice_bt2->Size = System::Drawing::Size(134, 59);
@@ -181,6 +186,7 @@ namespace baseescapev40 {
 			this->Choice_bt3->BackColor = System::Drawing::Color::LightGreen;
 			this->Choice_bt3->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->Choice_bt3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F, System::Drawing::FontStyle::Bold));
+			this->Choice_bt3->ForeColor = System::Drawing::Color::Black;
 			this->Choice_bt3->Location = System::Drawing::Point(16, 142);
 			this->Choice_bt3->Name = L"Choice_bt3";
 			this->Choice_bt3->Size = System::Drawing::Size(134, 59);
@@ -194,6 +200,7 @@ namespace baseescapev40 {
 			this->Choice_bt4->BackColor = System::Drawing::Color::LightGreen;
 			this->Choice_bt4->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->Choice_bt4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.75F, System::Drawing::FontStyle::Bold));
+			this->Choice_bt4->ForeColor = System::Drawing::Color::Black;
 			this->Choice_bt4->Location = System::Drawing::Point(16, 207);
 			this->Choice_bt4->Name = L"Choice_bt4";
 			this->Choice_bt4->Size = System::Drawing::Size(134, 59);
@@ -210,6 +217,7 @@ namespace baseescapev40 {
 			this->Inventorybox->Controls->Add(this->key_txt);
 			this->Inventorybox->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->Inventorybox->ForeColor = System::Drawing::Color::Black;
 			this->Inventorybox->Location = System::Drawing::Point(468, 258);
 			this->Inventorybox->Name = L"Inventorybox";
 			this->Inventorybox->Size = System::Drawing::Size(200, 100);
@@ -264,6 +272,7 @@ namespace baseescapev40 {
 			this->inventory_bt->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->inventory_bt->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->inventory_bt->ForeColor = System::Drawing::Color::Black;
 			this->inventory_bt->Location = System::Drawing::Point(16, 272);
 			this->inventory_bt->Name = L"inventory_bt";
 			this->inventory_bt->Size = System::Drawing::Size(134, 59);
@@ -278,9 +287,10 @@ namespace baseescapev40 {
 			this->gameover_bt->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->gameover_bt->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->gameover_bt->Location = System::Drawing::Point(159, 258);
+			this->gameover_bt->ForeColor = System::Drawing::Color::Black;
+			this->gameover_bt->Location = System::Drawing::Point(156, 258);
 			this->gameover_bt->Name = L"gameover_bt";
-			this->gameover_bt->Size = System::Drawing::Size(303, 100);
+			this->gameover_bt->Size = System::Drawing::Size(306, 100);
 			this->gameover_bt->TabIndex = 14;
 			this->gameover_bt->Text = L"GAME OVER";
 			this->gameover_bt->UseVisualStyleBackColor = false;

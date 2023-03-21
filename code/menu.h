@@ -75,6 +75,7 @@ namespace baseescapev40 {
 			// 
 			this->main_menu_txt->AutoSize = true;
 			this->main_menu_txt->Font = (gcnew System::Drawing::Font(L"Felix Titling", 18, System::Drawing::FontStyle::Bold));
+			this->main_menu_txt->ForeColor = System::Drawing::Color::Black;
 			this->main_menu_txt->Location = System::Drawing::Point(14, 9);
 			this->main_menu_txt->Name = L"main_menu_txt";
 			this->main_menu_txt->Size = System::Drawing::Size(372, 56);
@@ -87,6 +88,7 @@ namespace baseescapev40 {
 			this->Start->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->Start->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->Start->ForeColor = System::Drawing::Color::Black;
 			this->Start->Location = System::Drawing::Point(140, 83);
 			this->Start->Name = L"Start";
 			this->Start->Size = System::Drawing::Size(120, 36);
@@ -101,6 +103,7 @@ namespace baseescapev40 {
 			this->developer->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->developer->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->developer->ForeColor = System::Drawing::Color::Black;
 			this->developer->Location = System::Drawing::Point(140, 125);
 			this->developer->Name = L"developer";
 			this->developer->Size = System::Drawing::Size(120, 36);
@@ -115,6 +118,7 @@ namespace baseescapev40 {
 			this->Exit_btn->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->Exit_btn->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->Exit_btn->ForeColor = System::Drawing::Color::Black;
 			this->Exit_btn->Location = System::Drawing::Point(140, 209);
 			this->Exit_btn->Name = L"Exit_btn";
 			this->Exit_btn->Size = System::Drawing::Size(120, 36);
@@ -129,6 +133,7 @@ namespace baseescapev40 {
 			this->tg_btn->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->tg_btn->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->tg_btn->ForeColor = System::Drawing::Color::Black;
 			this->tg_btn->Location = System::Drawing::Point(140, 167);
 			this->tg_btn->Name = L"tg_btn";
 			this->tg_btn->Size = System::Drawing::Size(120, 36);
